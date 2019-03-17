@@ -242,53 +242,134 @@
 
                                     <div class="tpl-block">
                                         <div class="am-g">
-                                            <div class="am-u-sm-12 am-u-md-6">
-                                                <div class="am-btn-toolbar">
-                                                    <div class="am-btn-group am-btn-group-xs">
-                                                        <button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-check-circle-o"></span> 打开</button>
-                                                        <button type="button" class="am-btn am-btn-default am-btn-secondary"><span class="am-icon-plus"></span> 新增</button>
-                                                        <!--<button type="button" class="am-btn am-btn-default am-btn-warning"><span class="am-icon-file-zip-o"></span> 删除</button>-->
-                                                        <button type="button" class="am-btn am-btn-default am-btn-danger"><span class="am-icon-trash-o"></span> 删除</button>
+
+
+                                            <div class="widget-body am-fr am-text-xs">
+
+                                                <form class="am-form tpl-form-border-form tpl-form-border-br am-form-horizontal">
+                                                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                                        <div class="am-form-group">
+                                                            <label for="user-name" class="am-u-sm-3 am-form-label">合同编号<span class="tpl-form-line-small-title"></span></label>
+                                                            <div class="am-u-sm-9">
+                                                                <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入合同编号">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                                        <div class="am-form-group">
+                                                            <label for="user-email" class="am-u-sm-3 am-form-label">项目名称 <span class="tpl-form-line-small-title"></span></label>
+                                                            <div class="am-u-sm-9">
+                                                                <input type="text" class="tpl-form-input" placeholder="请输入项目名称" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                                        <div class="am-form-group">
+                                                            <label for="user-email" class="am-u-sm-3 am-form-label">业务大类<span class="tpl-form-line-small-title"></span></label>
+                                                            <div class="am-u-sm-9">
+                                                                <input type="text" class="tpl-form-input" placeholder="请输入业务大类" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                                        <div class="am-form-group">
+                                                            <label for="user-phone" class="am-u-sm-3 am-form-label">业务小类<span class="tpl-form-line-small-title"></span></label>
+                                                            <div class="am-u-sm-9">
+                                                                <select multiple data-am-selected>
+                                                                    <option value="a">a</option>
+                                                                    <option value="b" selected>b</option>
+                                                                    <option value="c">c</option>
+                                                                    <option value="d" selected>d</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                                        <div class="am-form-group">
+                                                            <label for="user-email" class="am-u-sm-3 am-form-label">委托客户<span class="tpl-form-line-small-title"></span></label>
+                                                            <div class="am-u-sm-9">
+                                                                <input type="text" class="tpl-form-input" placeholder="请输入委托客户" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                                        <div class="am-form-group am-form-inline">
+                                                            <label for="user-email" class="am-u-sm-3 am-form-label">上报时间<span class="tpl-form-line-small-title"></span></label>
+                                                            <!--<div class="am-input-group am-datepicker-date date"  data-am-datepicker="{format: 'yyyy-mm-dd'}">-->
+                                                                <!--<input id="date" name="entity.date" type="text" class="am-form-field" style="background-color:#fff;" readonly>-->
+                                                                <!--<span class="am-input-group-label am-datepicker-add-on" style="background-color:#fff;"><i class="am-icon-calendar"></i></span>-->
+                                                            <!--</div>-->
+                                                            <!--<div class="am-input-group am-datepicker-date date"  data-am-datepicker="{format: 'yyyy-mm-dd'}">-->
+                                                                <!--<input id="date1" name="entity.date" type="text" class="am-form-field" style="background-color:#fff;" readonly>-->
+                                                                <!--<span class="am-input-group-label am-datepicker-add-on" style="background-color:#fff;"><i class="am-icon-calendar"></i></span>-->
+                                                            <!--</div>-->
+                                                            <div class="am-input-group">
+                                                                <div class="am-u-sm-6">
+                                                                    <input type="text" class="tpl-form-input" placeholder="请输入起始上报时间" >
+                                                                </div>
+                                                                <div class="am-u-sm-6">
+                                                                    <input type="text" class="tpl-form-input" placeholder="请输入截止上报时间" >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="am-u-sm-12 am-u-md-6">
+                                                        <div class="am-btn-toolbar am-align-right">
+                                                            <div class="am-btn-group am-btn-group-xs">
+                                                                <button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-search"></span> 查询</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <br>
+                                        </div>
+                                        <div class="am-g">
+                                            <div class="widget-body am-fr am-text-xs">
+                                                <form class="am-form tpl-form-border-form tpl-form-border-br am-form-horizontal">
+                                                    <div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                                        <div class="am-form-group">
+                                                            <label for="user-name" class="am-u-sm-3 am-form-label">业绩上报<span class="tpl-form-line-small-title"></span></label>
+                                                            <div class="am-u-sm-9">
+                                                                <input type="text" class="tpl-form-input" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div class="am-u-sm-12 am-u-md-6">
+                                                    <div class="am-btn-toolbar">
+                                                        <div class="am-btn-group am-btn-group-xs">
+                                                            <button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-file"></span> 浏览</button>
+                                                            <button type="button" class="am-btn am-btn-default am-btn-secondary"><span class="am-icon-plus"></span> 确认上报</button>
+                                                            <button type="button" class="am-btn am-btn-default am-btn-link"><span class="am-icon-download"></span> 下载业绩信息上传表</button>
+                                                            <button type="button" class="am-btn am-btn-default am-btn-link"><span class="am-icon-download"></span> 下载业绩信息上传须知</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!--This is multiple choice-->
-                                            <!--<div class="am-u-sm-12 am-u-md-3">-->
-                                                <!--<div class="am-form-group">-->
-                                                    <!--<select data-am-selected="{btnSize: 'sm'}" style="display: none;">-->
-                                                        <!--<option value="option1">所有类别</option>-->
-                                                        <!--<option value="option2">IT业界</option>-->
-                                                        <!--<option value="option3">数码产品</option>-->
-                                                        <!--<option value="option3">笔记本电脑</option>-->
-                                                        <!--<option value="option3">平板电脑</option>-->
-                                                        <!--<option value="option3">只能手机</option>-->
-                                                        <!--<option value="option3">超极本</option>-->
-                                                    <!--</select>-->
-                                                    <!--&lt;!&ndash;<div class="am-selected am-dropdown " id="am-selected-mx4xq" data-am-dropdown="">&ndash;&gt;-->
-                                                        <!--&lt;!&ndash;<button type="button" class="am-selected-btn am-btn am-dropdown-toggle am-btn-sm am-btn-default">&ndash;&gt;-->
-                                                            <!--&lt;!&ndash;<span class="am-selected-status am-fl">所有类别</span>&ndash;&gt;-->
-                                                            <!--&lt;!&ndash;<i class="am-selected-icon am-icon-caret-down"></i>&ndash;&gt;-->
-                                                        <!--&lt;!&ndash;</button>  <div class="am-selected-content am-dropdown-content">&ndash;&gt;-->
-                                                        <!--&lt;!&ndash;<h2 class="am-selected-header">&ndash;&gt;-->
-                                                            <!--&lt;!&ndash;<span class="am-icon-chevron-left">返回</span></h2>       &ndash;&gt;-->
-                                                        <!--&lt;!&ndash;<ul class="am-selected-list">                     &ndash;&gt;-->
-                                                            <!--&lt;!&ndash;<li class="am-checked" data-index="0" data-group="0" data-value="option1">         &ndash;&gt;-->
-                                                                <!--&lt;!&ndash;<span class="am-selected-text">所有类别</span>         &ndash;&gt;-->
-                                                                <!--&lt;!&ndash;<i class="am-icon-check"></i></li>                                 &ndash;&gt;-->
-                                                            <!--&lt;!&ndash;<li class="" data-index="1" data-group="0" data-value="option2">         &ndash;&gt;-->
-                                                                <!--&lt;!&ndash;<span class="am-selected-text">IT业界</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="2" data-group="0" data-value="option3">         <span class="am-selected-text">数码产品</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="3" data-group="0" data-value="option3">         <span class="am-selected-text">笔记本电脑</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="4" data-group="0" data-value="option3">         <span class="am-selected-text">平板电脑</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="5" data-group="0" data-value="option3">         <span class="am-selected-text">只能手机</span>         <i class="am-icon-check"></i></li>                                 <li class="" data-index="6" data-group="0" data-value="option3">         <span class="am-selected-text">超极本</span>         <i class="am-icon-check"></i></li>            </ul>    <div class="am-selected-hint"></div>  </div></div>&ndash;&gt;-->
-                                                <!--</div>-->
-                                            <!--</div>-->
-                                            <!--This is search field-->
-                                            <!--<div class="am-u-sm-12 am-u-md-3">-->
-                                                <!--<div class="am-input-group am-input-group-sm">-->
-                                                    <!--<input type="text" class="am-form-field">-->
-                                                    <!--<span class="am-input-group-btn">-->
-                                                        <!--<button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="button"></button>-->
-                                                    <!--</span>-->
-                                                <!--</div>-->
-                                            <!--</div>-->
                                         </div>
+                                        <div class="am-u-sm-12 am-u-md-6">
+                                            <div class="am-btn-toolbar">
+                                                <div class="am-btn-group am-btn-group-xs">
+                                                    <button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-check-circle-o"></span> 打开</button>
+                                                    <button type="button" class="am-btn am-btn-default am-btn-secondary"><span class="am-icon-plus"></span> 新增</button>
+                                                    <!--<button type="button" class="am-btn am-btn-default am-btn-warning"><span class="am-icon-file-zip-o"></span> 删除</button>-->
+                                                    <button type="button" class="am-btn am-btn-default am-btn-danger"><span class="am-icon-trash-o"></span> 删除</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                            <p></p>
+
                                         <div class="am-g">
                                             <div class="am-u-sm-12 am-scrollable-horizontal am-scrollable-vertical am-text-nowrap">
                                                 <form class="am-form">
@@ -729,12 +810,7 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
                 </div>
-
             </div>
         </div>
     </div>

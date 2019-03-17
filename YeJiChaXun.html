@@ -11,14 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="icon" type="image/png" href="assets/i/favicon.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
     <meta name="apple-mobile-web-app-title" content="Amaze UI" />
     <script src="assets/js/echarts.min.js"></script>
     <link rel="stylesheet" href="assets/css/amazeui.min.css" />
     <link rel="stylesheet" href="assets/css/amazeui.datatables.min.css" />
     <link rel="stylesheet" href="assets/css/app.css">
     <script src="assets/js/jquery.min.js"></script>
+	<link rel="shortcut icon" type="images/x-icon" href="assets/img/favicon.png">
 
 </head>
 
@@ -221,16 +220,13 @@
 
             <div class="row">
                 <div class="am-u-sm-12 am-u-md-12 am-u-lg-9">
-                    <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span> 业务上报 <small>方圆标志</small></div>
+                    <div class="page-header-heading"><span class="am-icon-home page-header-heading-icon"></span> 业绩查询 <small>方圆标志</small></div>
                 </div>
-                <!--<div class="am-u-lg-3 tpl-index-settings-button">-->
-                <!--<button type="button" class="page-header-button"><span class="am-icon-paint-brush"></span> 设置</button>-->
-                <!--</div>-->
             </div>
 
         </div>
 
-        <div class="row-content am-cf">
+        <div class="row-content am-cf am-text-xs">
 
             <div class="row">
 
@@ -242,7 +238,185 @@
 
                                 <div class="tpl-block">
                                     <div class="am-g">
-                                        <div class="am-u-sm-12 am-u-md-6">
+                                        
+										
+																			
+									<div class="widget-body am-fr am-text-xs">
+
+                                <form class="am-form tpl-form-border-form tpl-form-border-br am-form-horizontal">
+								<div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                    <div class="am-form-group">
+                                        <label for="user-name" class="am-u-sm-3 am-form-label">合同编号<span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" id="user-name" placeholder="请输入合同编号">
+                                        <small>不可重复，不可为空。</small>
+                                        </div>
+                                    </div>
+								</div>	
+								
+						            <div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                    <div class="am-form-group">
+                                        <label for="user-email" class="am-u-sm-3 am-form-label">合同金额 <span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" placeholder="请输入合同金额" >
+                                            <small>不可为空，小数点后保留2位。</small>
+                                        </div>
+                                    </div>
+									</div>
+								
+									<div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                    <div class="am-form-group">
+                                        <label for="user-email" class="am-u-sm-3 am-form-label">项目名称 <span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" placeholder="请输入项目名称" >
+                                            <small></small>
+                                        </div>
+                                    </div>
+									</div>
+									
+									<div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                    <div class="am-form-group">
+                                        <label for="user-email" class="am-u-sm-3 am-form-label">合同签订日期<span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" placeholder="请输入合同签订日期"
+                                            <small>不可为空，月份及日期不编虚位"0"。</small>
+                                        </div>
+                                    </div>
+									</div>	
+									
+									
+								<div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+								<div class="am-form-group">
+                                        <label for="user-phone" class="am-u-sm-3 am-form-label">涉及行业<span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <select multiple data-am-selected>
+  <option value="a">a</option>
+  <option value="b" selected>b</option>
+  <option value="c">c</option>
+  <option value="d" selected>d</option>
+</select>
+                                        <small>可多选。</small>
+                                        </div>
+                                    </div>
+								</div>
+								
+								<div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                    <div class="am-form-group">
+                                        <label for="user-email" class="am-u-sm-3 am-form-label">统计收入年份 <span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" placeholder="请输入统计收入年份" >
+                                            <small>默认为合同签订的年份。</small>
+                                        </div>
+                                    </div>
+									</div>	
+																
+								
+								
+									<div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                    <div class="am-form-group">
+                                        <label for="user-email" class="am-u-sm-3 am-form-label">业务大类<span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" placeholder="请输入业务大类" >
+                                            <small>不可为空。</small>
+                                        </div>
+                                    </div>
+									</div>
+									
+									
+									<div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                    <div class="am-form-group">
+                                        <label for="user-email" class="am-u-sm-3 am-form-label">项目归属 <span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" placeholder="请输入项目归属" >
+                                            
+                                        </div>
+                                    </div>
+									</div>
+									
+									
+									
+									
+								<div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+								<div class="am-form-group">
+                                        <label for="user-phone" class="am-u-sm-3 am-form-label">业务小类<span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <select multiple data-am-selected>
+  <option value="a">a</option>
+  <option value="b" selected>b</option>
+  <option value="c">c</option>
+  <option value="d" selected>d</option>
+</select>
+                                        <small>可多选，不可为空。</small>
+                                        </div>
+                                    </div>
+								</div>
+								
+								
+									<div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                    <div class="am-form-group">
+                                        <label for="user-email" class="am-u-sm-3 am-form-label">项目负责人<span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" placeholder="请输入项目负责人" >
+                                            <small>不可为空。</small>
+                                        </div>
+                                    </div>
+									</div>
+								
+									
+									
+								
+									<div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                    <div class="am-form-group">
+                                        <label for="user-email" class="am-u-sm-3 am-form-label">委托客户<span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" placeholder="请输入委托客户" >
+                                            <small>不可为空。</small>
+                                        </div>
+                                    </div>
+									</div>
+									
+									
+									
+									<div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                    <div class="am-form-group">
+                                        <label for="user-email" class="am-u-sm-3 am-form-label">项目简要描述<span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" placeholder="请输入项目简要描述">
+											<small>不多于400字</small>
+                                        </div>
+                                    </div>
+									</div>
+								
+								<div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+								<div class="am-form-group">
+                                        <label for="user-phone" class="am-u-sm-3 am-form-label">委托客户类型<span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <select multiple data-am-selected>
+                                                  <option value="a">a</option>
+                                                  <option value="b" selected>b</option>
+                                                  <option value="c">c</option>
+                                                  <option value="d" selected>d</option>
+                                            </select>
+                                    <small>可多选，不可为空。</small>
+                                        </div>
+                                    </div>
+								</div>
+								
+								
+								<div class="am-u-sm-12 am-u-md-12 am-u-lg-6" style="height:70px">
+                                    <div class="am-form-group">
+                                        <label for="user-email" class="am-u-sm-3 am-form-label">备注<span class="tpl-form-line-small-title"></span></label>
+                                        <div class="am-u-sm-9">
+                                            <input type="text" class="tpl-form-input" placeholder="请输入备注">
+                                        </div>
+                                    </div>
+									</div>
+								
+								</form>	
+										
+									
+										
+										<div class="am-u-sm-12 am-u-md-12">
                                             <div class="am-btn-toolbar">
                                                 <div class="am-btn-group am-btn-group-xs">
                                                     <button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-check-circle-o"></span> 打开</button>
@@ -292,6 +466,15 @@
                                         <!--</div>-->
                                         <!--</div>-->
                                     </div>
+									
+									
+									
+									
+									
+									
+									
+									
+									
                                     <div class="am-g">
                                         <div class="am-u-sm-12 am-scrollable-horizontal am-scrollable-vertical am-text-nowrap">
                                             <form class="am-form">
